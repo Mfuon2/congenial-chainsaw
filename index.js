@@ -22,8 +22,8 @@ npm ERR!     <https://docs.npmjs.com/cli/install#limitations-of-npms-install-alg
 npm ERR! A complete log of this run can be found in:`;
 
 function compareLongString(stringOne,stringTwo){
-    var one = m(stringOne);
-    var two = m(stringTwo);
+    let one = m(stringOne);
+    let two = m(stringTwo);
     if(one === two){
         return true;
     }else{
@@ -31,6 +31,6 @@ function compareLongString(stringOne,stringTwo){
     }
 }
 
-var results = compareLongString(first,second);
+const results = compareLongString(first,second);
 
 console.log(results);
